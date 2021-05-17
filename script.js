@@ -19,5 +19,28 @@ $(function(){
 //});
 
 //演習3
+$(function(){
+    let result = $("#hobby").val();
+    if(result == "brank"){
+        $(".hideSelect").hide();
+    } 
+});
 
+$(function(){
+    $("#hobby").on("change",function(){
+        let result = $("#hobby").val();
+
+        if(result == "triathlon"){
+            $("#triathlon").show();
+            $("#triathlonId").show();
+            $("#like").hide();
+            $("#likeId").hide();
+        }else if(result == "other"){
+            $("#like").show();
+            $("#likeId").show();
+            $("#triathlon").hide();
+            $("#triathlonId").hide();
+        } 
+    });
+});
 

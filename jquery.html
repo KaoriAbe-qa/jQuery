@@ -23,12 +23,25 @@ p{
 <button type="button" id="btn" >名前を表示</button><br>
 
 <br>
+<form action="#" method="post">
 趣味はなんですか？
 <select name="hobby" id="hobby">
-    <option value="brank">--</option>
+    <option value="brank" checked>--</option>
     <option value="triathlon">トライアスロン</option>
     <option value="other">その他</option>
 </select><br>
+
+<p id="triathlonId" class="hideSelect">それでは好きな種目は？</p>
+<select name="triathlon" id="triathlon" class="hideSelect">
+    
+    <option value="swim">Swim</option>
+    <option value="bike">Bike</option>
+    <option value="run">Run</option>
+</select><br>
+
+<p id="likeId" class="hideSelect">それでは何が好き？</p>
+<input type="text" name="like" id="like" class="hideSelect">
+</form>
 
 
 
