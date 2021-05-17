@@ -54,4 +54,12 @@ $(function(){
     });
 });
 
-
+//演習5
+$(function(){
+    $("#btn3").on("click", function(){
+        let result = $("#mailAddress").val();
+        if(result == ""){
+            alert("メールアドレスを入力してください！");
+        }
+    });
+});
