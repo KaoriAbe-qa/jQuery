@@ -3,15 +3,20 @@
 //演習1
 $(function(){
     $("#btn").on("click", function(){
-        $("#msg").text("阿部佳織").css("color","blue");
+        $("#msg").text("阿部佳織");
         $("#msg").toggleClass("on");
     });
 });
 
 //演習2
-$(function(){
-    $(".on").css("color", "red");      
-});
+//$(function(){
+//    let color =  $("#msg").css("color");
+//    if (color == "rgb(0,0,255)") {
+//        $("#msg").css("color", "red");      
+//    } else {
+//        $("#msg").css("color", "blue");      
+//    }
+//});
 
 //演習3
 
