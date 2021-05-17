@@ -44,3 +44,14 @@ $(function(){
     });
 });
 
+//演習4
+$(function(){
+    $("#btn2").on("click", function(){
+        $("#btn2").prop("disabled",true);
+        //確認用
+        let result = $("#name").val();
+        console.log(result);
+    });
+});
+
+
